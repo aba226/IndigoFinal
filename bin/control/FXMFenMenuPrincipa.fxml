@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="369.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.FenMenuPrincipal">
+	<children>
+      <Pane layoutX="218.0" layoutY="2.0" prefHeight="369.0" prefWidth="409.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="Monsieur" layoutX="20.0" layoutY="335.0" opacity="0.0" prefHeight="17.0" prefWidth="96.0" text="Monsieur" />
+            <Button fx:id="BtnCommande" layoutX="296.0" layoutY="206.0" onAction="#ButtonBtnComande" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: rgb(112,173,71);" text="Commande ">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="BtnClient" layoutX="15.0" layoutY="206.0" mnemonicParsing="false" onAction="#ButtonBtnClient" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: rgb(112,173,71);" text="Client">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="BtnArticle" layoutX="165.0" layoutY="79.0" onAction="#ButtonBtnArticle" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: rgb(112,173,71);" text="Article">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="170.0" layoutY="312.0" mnemonicParsing="false" onAction="#ButtonBtnRetour" prefHeight="23.0" prefWidth="96.0" style="-fx-background-color: rgb(255,255,0);" text="Btn Retour">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="87.0" fitWidth="79.0" layoutX="29.0" layoutY="116.0">
+               <image>
+                  <Image url="@../../images/images/accueil/animation.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="185.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../images/images/accueil/book.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="32.0" layoutX="189.0" layoutY="199.0">
+               <image>
+                  <Image url="@../../images/images/accueil/Settings-02-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="73.0" layoutX="312.0" layoutY="104.0">
+               <image>
+                  <Image url="@../../images/images/accueil/Shopping-Bag-128.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="2.0" prefHeight="369.0" prefWidth="171.0" style="-fx-background-color: rgb(150,150,150);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="5.0" layoutY="14.0" text="SARL INDIGO">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="373.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.FenAdministrateur">
+   <children>
+      <SplitPane dividerPositions="0.2692307692307692" layoutX="-7.0" layoutY="34.0" prefHeight="534.0" prefWidth="797.0" AnchorPane.bottomAnchor="-151.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="-64.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane prefHeight="298.0" prefWidth="227.0">
+               <children>
+                  <Label layoutX="18.0" layoutY="23.0" text="Veuiller remplir tous les &#10; champs pour Ajouter&#10;puis cliquer sur valider" />
+                  <Label layoutX="28.0" layoutY="140.0" text="Veuiller remplir le code&#10;et les parties que vous &#10;voulez modifier" />
+                  <Label layoutX="28.0" layoutY="227.0" text="Veuiller specifier uniquement&#10;le code de l'utilisateur" />
+                  <Button fx:id="BtnAjt" layoutX="44.0" layoutY="-4.0" mnemonicParsing="false" onAction="#ButtonAjouter" text="Ajouter" />
+                  <Button fx:id="BtnMod" layoutX="41.0" layoutY="115.0" mnemonicParsing="false" onAction="#ButtonModifier" prefHeight="8.0" prefWidth="83.0" text="Modifier" />
+                  <Button fx:id="BtnSup" layoutX="44.0" layoutY="202.0" mnemonicParsing="false" onAction="#ButtonSupprimer" prefHeight="8.0" prefWidth="83.0" text="Supprimer" />
+                  <Button fx:id="BtnRech" layoutX="44.0" layoutY="276.0" mnemonicParsing="false" onAction="#ButtonRechercher" prefHeight="8.0" prefWidth="83.0" text="Rechercher" />
+                  <Label layoutX="22.0" layoutY="311.0" text="Veuiller specifier uniquement&#10;le code de l'utilisateur" />
+                  <Button fx:id="BtnImpr" layoutX="44.0" layoutY="353.0" mnemonicParsing="false" onAction="#ButtonImprimer" prefHeight="8.0" prefWidth="83.0" text="Imprimer" />
+                  <Label layoutX="28.0" layoutY="406.0" text="Veuiller specifier uniquement&#10;le code de l'utilisateur" />
+                  <Button fx:id="BtnMP" layoutX="43.0" layoutY="456.0" mnemonicParsing="false" onAction="#ButtonMenuPrincipal" prefHeight="25.0" prefWidth="113.0" text="Menu Principal" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="578.0">
+               
+	
+	        <children>
+            
+      
+            
+             <ImageView fitHeight="51.0" fitWidth="79.0" layoutX="25.0" layoutY="20.0" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="481.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@../../images/images/pc.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="117.0" layoutY="37.0" prefHeight="17.0" prefWidth="167.0" text="SARL INDIGO" />
+                  <Label layoutX="8.0" layoutY="74.0" prefHeight="27.0" prefWidth="460.0" text="Bienvenue sur la page d'Administration de l'application">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutY="101.0" prefHeight="162.0" prefWidth="548.0">
+                     <children>
+                        <Label layoutX="153.0" prefHeight="17.0" prefWidth="86.0" text="Info  utilisateur" />
+                        <TextField fx:id="NameUser" layoutX="40.0" layoutY="30.0" prefHeight="25.0" prefWidth="86.0" promptText="Badié" />
+                        <Label layoutX="14.0" layoutY="34.0" text="Nom" />
+                        <Label layoutX="135.0" layoutY="34.0" text="Prenom" />
+                        <TextField fx:id="NameUser1" layoutX="193.0" layoutY="30.0" prefHeight="25.0" prefWidth="86.0" promptText="Landry " />
+                        <Label layoutX="289.0" layoutY="34.0" text="nom utilisateur" />
+                        <TextField fx:id="NameUser11" layoutX="371.0" layoutY="30.0" prefHeight="25.0" prefWidth="86.0" promptText="Landry " />
+                        <Label layoutX="19.0" layoutY="78.0" text="Mot de passe" />
+                        <PasswordField layoutX="120.0" layoutY="74.0" prefHeight="25.0" prefWidth="92.0" promptText="*********************" />
+                        <PasswordField layoutX="345.0" layoutY="74.0" prefHeight="25.0" prefWidth="113.0" promptText="*********************" />
+                        <Label layoutX="236.0" layoutY="69.0" text="Confirmer" />
+                        <TextField fx:id="NameUser2" layoutX="176.0" layoutY="115.0" prefHeight="25.0" prefWidth="86.0" promptText="Badié" />
+                        <Label layoutX="19.0" layoutY="119.0" text="Afficher le mot de passe" />
+                        <Label layoutX="303.0" layoutY="119.0" text="Code utilisateur" />
+                        <TextField fx:id="NameUser12" layoutX="422.0" layoutY="115.0" prefHeight="25.0" prefWidth="101.0" promptText="Automatique" />
+                     </children>
+                  </Pane>
+                  <TableView layoutX="6.0" layoutY="267.0" prefHeight="87.0" prefWidth="516.0">
+                    <columns>
+                      <TableColumn prefWidth="102.0" text="Code" />
+                      <TableColumn minWidth="0.0" prefWidth="119.0" text="Nom utlisateur" />
+                        <TableColumn prefWidth="96.0" text="Nom" />
+                        <TableColumn prefWidth="74.0" text="Prenom" />
+                        <TableColumn prefWidth="123.0" text="Mot de passe" />
+                    </columns>
+                  </TableView>
+   </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

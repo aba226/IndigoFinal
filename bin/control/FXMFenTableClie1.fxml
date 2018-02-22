@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.FenTableClient">
+	<children>
+      <SplitPane dividerPositions="0.2635270541082164" layoutX="6.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="0.0 ">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="798.0" prefWidth="277.0" style="-fx-background-color: rgb(192,192,192);">
+               <children>
+                  <Button fx:id="BtnAjout" layoutX="95.0" layoutY="39.0" mnemonicParsing="false" onAction="#ButtonAjouter" prefHeight="25.0" prefWidth="103.0" text="Ajouter">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Rech" layoutX="95.0" layoutY="102.0" mnemonicParsing="false" onAction="#ButtonRechercher" prefHeight="25.0" prefWidth="103.0" text="Rechercher">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Mod" layoutX="95.0" layoutY="158.0" mnemonicParsing="false" onAction="#ButtonModifier" prefHeight="25.0" prefWidth="103.0" text="Modifier">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Sup" layoutX="95.0" layoutY="211.0" mnemonicParsing="false" onAction="#ButtonRechercher" prefHeight="25.0" prefWidth="103.0" text="Supprimer">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="Aper" layoutX="95.0" layoutY="261.0" mnemonicParsing="false" onAction="#ButtonHandleAper" prefHeight="25.0" prefWidth="150.0" text="Apercu avant Impression">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <Button layoutX="95.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Imprimer">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <Button layoutX="95.0" layoutY="387.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Exporter">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="MenPrinc" layoutX="95.0" layoutY="444.0" mnemonicParsing="false" onAction="#ButtonMenuPrinc" prefHeight="25.0" prefWidth="103.0" text="Menu Principal">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font></Button>
+                  <ImageView fitHeight="44.0" fitWidth="28.0" layoutX="47.0" layoutY="30.0">
+                     <image>
+                        <Image url="@../../images/images/gestion/Add-New-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="37.0" layoutY="91.0">
+                     <image>
+                        <Image url="@../../images/images/gestion/Search-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="37.0" layoutY="147.0">
+                     <image>
+                        <Image url="@../../images/images/gestion/Data-Edit-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="37.0" layoutY="200.0">
+                     <image>
+                        <Image url="@../../images/images/gestion/Garbage-Open-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="37.0" layoutY="250.0">
+                     <image>
+                        <Image url="@../../images/images/gestion/Preview-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="37.0" layoutY="311.0">
+                     <image>
+                        <Image url="@../../images/images/gestion/Printer-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="37.0" layoutY="376.0">
+                     <image>
+                        <Image url="@../../images/images/gestion/Data-Export-48.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="35.0" layoutY="439.0">
+                     <image>
+                        <Image url="@../../images/images/gestion/Home-48.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="490.0" prefWidth="585.0">
+               <children>
+                  <Label layoutX="100.0" layoutY="14.0" prefHeight="44.0" prefWidth="272.0" text="Gestion des clients" textFill="#713bd0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="44.0" prefHeight="25.0" prefWidth="346.0" text="Ajout  Modification   Suppression  Consultation  et  Impression" />
+                  <Pane layoutX="7.0" layoutY="69.0" prefHeight="222.0" prefWidth="585.0">
+                     <children>
+                        <Label layoutX="19.0" layoutY="14.0" text="Code" />
+                        <Label layoutX="19.0" layoutY="37.0" text="Nom" />
+                        <Label layoutX="8.0" layoutY="64.0" text="Addresse" />
+                        <Label layoutX="1.0" layoutY="89.0" prefHeight="17.0" prefWidth="87.0" text="Code Postale" />
+                        <Label layoutX="19.0" layoutY="117.0" text="Tel. fixe" />
+                        <Label layoutX="19.0" layoutY="142.0" text="Email" />
+                        <Label layoutX="19.0" layoutY="166.0" text="Remarque" />
+                        <Label layoutX="442.0" layoutY="15.0" text="Carte Fidélité" />
+                        <Label layoutX="256.0" layoutY="15.0" text="Date Creation" />
+                        <Label layoutX="279.0" layoutY="37.0" text="Prenom" />
+                        <Label layoutX="276.0" layoutY="89.0" text="Ville" />
+                        <Label layoutX="279.0" layoutY="117.0" text="Mobilis" />
+                        <TextField fx:id="textCode" layoutX="77.0" layoutY="10.0" prefHeight="25.0" prefWidth="172.0" />
+                        <TextField layoutX="346.0" layoutY="10.0" prefHeight="25.0" prefWidth="87.0" />
+                        <TextField fx:id="textNom" layoutX="77.0" layoutY="33.0" prefHeight="25.0" prefWidth="172.0" />
+                        <TextField layoutX="77.0" layoutY="60.0" prefHeight="25.0" prefWidth="496.0" />
+                        <TextField fx:id="textPrenom" layoutX="346.0" layoutY="33.0" prefHeight="25.0" prefWidth="227.0" />
+                        <TextField layoutX="77.0" layoutY="86.0" prefHeight="25.0" prefWidth="172.0" />
+                        <TextField layoutX="346.0" layoutY="86.0" prefHeight="25.0" prefWidth="227.0" />
+                        <TextField layoutX="78.0" layoutY="113.0" prefHeight="25.0" prefWidth="172.0" />
+                        <TextField layoutX="346.0" layoutY="113.0" prefHeight="25.0" prefWidth="227.0" />
+                        <TextField layoutX="78.0" layoutY="138.0" prefHeight="25.0" prefWidth="172.0" />
+                        <TextArea fx:id="textArea" layoutX="78.0" layoutY="166.0" prefHeight="53.0" prefWidth="496.0" />
+                        <CheckBox layoutX="531.0" layoutY="6.0" mnemonicParsing="false" />
+                     </children>
+                 </Pane>
+                  <Pane layoutX="9.0" layoutY="307.0" prefHeight="107.0" prefWidth="585.0">
+                     <children>
+                        <TableView fx:id="tableVue" layoutX="-2.0" layoutY="-3.0" onKeyPressed="#ButtonHandleAper" prefHeight="113.0" prefWidth="585.0">
+                          <columns>
+                            <TableColumn fx:id="colCode" prefWidth="113.0" text="Code" />
+                            <TableColumn fx:id="colNom" prefWidth="122.0" text="Nom" />
+                            <TableColumn fx:id="colPrenom" prefWidth="112.0" text="Prenom" />
+                            <TableColumn fx:id="ColCarteFidelite" prefWidth="109.0" text="Carte de fidelité" />
+                            <TableColumn fx:id="ColDateCreation" prefWidth="126.0" text="Date de création" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <ComboBox layoutX="236.0" layoutY="445.0" prefWidth="150.0" promptText="Trier Par" />
+                  <Button fx:id="BtnRtr" layoutX="625.0" layoutY="14.0" mnemonicParsing="false" onAction="#ButonRetour" text="Retour" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

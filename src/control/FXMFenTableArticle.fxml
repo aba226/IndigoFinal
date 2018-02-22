@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="503.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.FenTableArticle">
+<children>
+      <SplitPane dividerPositions="0.23116219667943805" layoutX="6.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="0.0 ">
+      <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="490.0" prefWidth="225.0">
+               <children>
+                  <Button fx:id="BtnAjout" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#ButtonAjouter" prefHeight="25.0" prefWidth="87.0" text="Ajouter" />
+                  <Button fx:id="Rech" layoutX="24.0" layoutY="50.0" mnemonicParsing="false" onAction="#ButtonRechercher" prefHeight="25.0" prefWidth="87.0" text="Rechercher" />
+                  <Button fx:id="Mod" layoutX="25.0" layoutY="86.0" mnemonicParsing="false" onAction="#ButtonModifier" prefHeight="25.0" prefWidth="87.0" text="Modifier" />
+                  <Button fx:id="Sup" layoutX="24.0" layoutY="124.0" mnemonicParsing="false" onAction="#ButtonSupprimer" prefHeight="25.0" prefWidth="87.0" text="Supprimer" />
+                  <Button layoutX="25.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Imprimer" />
+                  <Button layoutX="25.0" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Exporter" />
+                  <Button fx:id="MenPrinc" layoutX="24.0" layoutY="293.0" mnemonicParsing="false" onAction="#ButtonMenuPrinc" prefHeight="25.0" prefWidth="95.0" text="Menu Principal" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="490.0" prefWidth="585.0">
+               <children>
+                  <Label layoutX="137.0" prefHeight="44.0" prefWidth="272.0" text="Gestion des articles" textFill="#713bd0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="44.0" prefHeight="25.0" prefWidth="346.0" text="Ajout  Modification   Suppression  Consultation  et  Impression" />
+                  <Pane layoutX="7.0" layoutY="69.0" prefHeight="222.0" prefWidth="585.0">
+                     <children>
+                        <Label layoutX="19.0" layoutY="14.0" text="Code" />
+                        <Label layoutX="7.0" layoutY="56.0" text="Designation" />
+                        <Label layoutX="19.0" layoutY="89.0" prefHeight="17.0" prefWidth="54.0" text="Quantité" />
+                        <Label layoutX="284.0" layoutY="14.0" text="Code Categorie" />
+                        <Label layoutX="276.0" layoutY="89.0" text="Prix Unitaire" />
+                        <TextField fx:id="textCode" layoutX="77.0" layoutY="10.0" prefHeight="25.0" prefWidth="172.0" />
+                        <TextField fx:id="textCodeCateg" layoutX="371.0" layoutY="10.0" prefHeight="25.0" prefWidth="202.0" />
+                        <TextField fx:id="textDesignation" layoutX="77.0" layoutY="52.0" prefHeight="25.0" prefWidth="496.0" />
+                        <TextField fx:id="textQuantite" layoutX="77.0" layoutY="86.0" prefHeight="25.0" prefWidth="172.0" />
+                        <TextField fx:id="textPrixUnitaire" layoutX="346.0" layoutY="86.0" prefHeight="25.0" prefWidth="227.0" />
+                        <Button fx:id="BtnAjout" layoutX="64.0" layoutY="142.0" mnemonicParsing="false" onAction="#ButtonAjouter" prefHeight="25.0" prefWidth="87.0" text="Ajouter" />
+                        <Button fx:id="BtnEffacer" layoutX="189.0" layoutY="142.0" mnemonicParsing="false" onAction="#ButtonEffacer" prefHeight="25.0" prefWidth="87.0" text="Effacer" />
+                        <Button fx:id="BtnModifier" layoutX="323.0" layoutY="142.0" mnemonicParsing="false" onAction="#ButtonModifier" prefHeight="25.0" prefWidth="87.0" text="Modifier" />
+                        <Button fx:id="BtnAnnuler" layoutX="451.0" layoutY="142.0" mnemonicParsing="false" onAction="#ButtonAnnuler" prefHeight="25.0" prefWidth="87.0" text="Annuler" />
+                     </children>
+                 </Pane>
+                  <Pane layoutX="9.0" layoutY="307.0" prefHeight="107.0" prefWidth="585.0">
+                     <children>
+                        <TableView fx:id="tableVue" layoutX="-2.0" layoutY="-3.0" onKeyPressed="#ButtonAjouter" prefHeight="113.0" prefWidth="585.0">
+                          <columns>
+                            <TableColumn fx:id="colCode"  prefWidth="113.0" text="Code" />
+                            <TableColumn fx:id="colCodeCategorie" prefWidth="122.0" text="Code Categorie" />
+                            <TableColumn fx:id="colDesignation"  prefWidth="112.0" text="Designation" />
+                            <TableColumn fx:id="ColQuantite" prefWidth="109.0" text="Quantité" />
+                            <TableColumn fx:id="ColPrixUnitaire" prefWidth="126.0" text="Prix Unitaire" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <ComboBox layoutX="62.0" layoutY="441.0" prefWidth="150.0" promptText="Trier Par" />
+               </children>
+            </AnchorPane>
+      </items>     
+      </SplitPane>
+</children>
+</AnchorPane>

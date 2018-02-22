@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: rgb(178,178,178);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.FenConn">
+	<!-- TODO Add Nodes -->
+	
+	<children>
+            <Button fx:id="BtnTest" layoutX="381.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="92.0" text="Quitter" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="313.0" AnchorPane.topAnchor="300.0" />
+        
+      
+      <Label layoutX="111.0" layoutY="32.0" text="SARL INDIGO" AnchorPane.bottomAnchor="375.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="313.0" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a6fb082" height="435.0" layoutX="4.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="585.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0" />
+              
+            
+            
+            <Button fx:id="BtnValider" layoutX="180.0" layoutY="300.0" mnemonicParsing="false" onAction="#ButtonActionNP" prefHeight="32.0" prefWidth="92.0" text="Valider" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="313.0" AnchorPane.topAnchor="300.0" />
+      
+                  <Label layoutX="140.0" layoutY="78.0" prefHeight="28.0" prefWidth="306.0" text="Connexion au programme" AnchorPane.bottomAnchor="329.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="78.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font></Label>
+                  <Label layoutX="105.0" layoutY="143.0" text="Nom d'utilisateur " AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="371.0" AnchorPane.topAnchor="143.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font></Label>
+                  <PasswordField fx:id="PassWord" layoutX="250.0" layoutY="218.0" promptText="***************" AnchorPane.bottomAnchor="192.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="218.0" />
+                  <Label layoutX="105.0" layoutY="223.0" text="Mot de Passe" AnchorPane.bottomAnchor="196.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="401.0" AnchorPane.topAnchor="223.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font></Label>
+                  
+                  <TextField fx:id="NameUser" layoutX="250.0" layoutY="138.0" promptText="root" AnchorPane.bottomAnchor="272.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="138.0" />
+                  <ImageView fitHeight="51.0" fitWidth="79.0" layoutX="25.0" layoutY="20.0" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="481.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@../../images/images/pc.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="38.0" layoutX="26.0" layoutY="138.0" AnchorPane.bottomAnchor="272.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="521.0" AnchorPane.topAnchor="138.0">
+                     <image>
+                        <Image url="@../../images/images/Windows-8-Login-16.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="38.0" layoutX="26.0" layoutY="219.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="521.0" AnchorPane.topAnchor="219.0">
+                     <image>
+                        <Image url="@../../images/images/Key-16.png" />
+                     </image>
+                  </ImageView>
+   </children>
+</AnchorPane>
